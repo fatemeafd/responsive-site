@@ -9,7 +9,7 @@
   <body class="font-first">
     <!-- start project -->
     <!-- start navbar -->
-    <div class="w-full bg-primary flex flex-row justify-center">
+    <div class="w-full bg-primary flex flex-row justify-center relative z-50">
       <div
         class="lg:w-[75%] w-[85%] flex flex-row justify-between items-center lg:p-4 py-4 px-6"
       >
@@ -23,9 +23,12 @@
         </div>
         <!-- end logo -->
         <!-- start hamburger menu -->
-        <div class="lg:w-full lg:flex lg:flex-col">
+        <div class="lg:flex lg:items-center">
           <input id="check" type="checkbox" class="hidden peer" />
-          <label for="check" class="bg-cover w-26.25 flex justify-center">
+          <label
+            for="check"
+            class="relative z-60 bg-cover w-26.25 flex justify-center lg:hidden"
+          >
             <img
               src="./public/image/svg/hamburger-menu.svg"
               class="peer-checked:hidden"
@@ -33,9 +36,9 @@
             />
           </label>
           <div
-            class="lg:flex lg:flex-row flex-col lg:items-center items-center lg:w-fit w-full lg:h-fit h-screen lg:text-lg text-xl hidden peer-checked:flex absolute left-0 transition-all duration-300 align-center lg:leading-0 leading-10 bg-primary text-[#BBBBCB] cursor-pointer gap-5 p-15"
+            class="lg:flex lg:flex-row flex-col lg:items-center items-center lg:w-fit w-full lg:h-fit h-screen lg:text-lg text-xl hidden peer-checked:flex absolute lg:static left-0 top-0 z-50 lg:z-auto lg:top-auto transition-all duration-300 align-center lg:leading-0 leading-10 bg-primary lg:bg-transparent text-[#BBBBCB] cursor-pointer gap-5 p-15 lg:p-0"
           >
-            <a href="./index.html" class="hover:text-white">Home</a>
+            <a href="./index.html" class="text-white">Home</a>
             <a href="./about-us.html" class="hover:text-white">About us</a>
             <a href="./features.html" class="hover:text-white">Features</a>
             <a href="./pricing.html" class="hover:text-white">Pricing</a>
@@ -46,7 +49,6 @@
             >
               Contact us
             </button>
-            <!-- end menu -->
           </div>
         </div>
         <!-- end hamburger menu -->
@@ -54,11 +56,11 @@
     </div>
     <!-- end navbar -->
     <!-- start home hero -->
-    <div class="flex flex-wrap items-center p-10 bg-primary">
+    <div class="flex items-center p-10 bg-primary">
       <div
-        class="lg:w-1/2 w-full flex flex-col justify-center lg:text-left text-center text-base gap-2 lg:items-start items-center lg:pt-2"
+        class="lg:w-1/2 w-full flex flex-col justify-center lg:text-left text-center text-base gap-2 lg:items-start items-center lg:pt-2 flex-wrap"
       >
-        <h1 class="lg:font-semibold lg:text-5xl text-3xl lg:pr-2 lg:leading-3">
+        <h1 class="lg:font-semibold lg:text-5xl text-3xl lg:pr-2 lg:leading-13">
           Building stellar websites for early startups
         </h1>
         <p class="lg:py-5 lg:pr-2 m-4 lg:text-base font-thin">
@@ -78,7 +80,7 @@
           /></a>
         </div>
       </div>
-      <div>
+      <div class="lg:flex hidden">
         <img src="./public/image/svg/hero.svg" alt="" />
       </div>
     </div>
