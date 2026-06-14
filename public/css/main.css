@@ -1,0 +1,31 @@
+@import "tailwindcss";
+/* @plugin "daisyui"; */
+@plugin "flowbite/plugin";
+@import "flowbite/src/themes/default";
+
+@font-face {
+  font-family: first;
+  src: url(../../public/fonts/font1.woff2);
+}
+
+@theme {
+  --font-first: first sans-serif;
+}
+
+@theme {
+  --color-primary: #1c1e53;
+  --color-base: #f5f6fc;
+  --color-secondary: #fdd87f;
+}
+
+@utility flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@layer components {
+  .card {
+    @apply p-6 m-2 bg-sky-200 rounded-2xl;
+  }
+}
