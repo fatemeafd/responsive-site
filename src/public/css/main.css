@@ -2,10 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
 /* @plugin "daisyui"; */
 @plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
 @import "flowbite/src/themes/default";
+@import url(./input.css);
 
-@theme {
-  --font-first: "Poppins", --font-sans: "Poppins";
+@font-face {
+  font-family: "poppins";
+  src: url(./partials/fonts/poppins/Poppins-Bold.eot);
+  src: url(./partials/fonts/poppins/Poppins-Bold.ttf);
+  src: url(./partials/fonts/poppins/Poppins-Bold.woff);
+  src: url(./partials/fonts/poppins/Poppins-Bold.woff2);
+  src: url(./partials/fonts/poppins/Poppins-Regular.ttf);
+  src: url(./partials/fonts/poppins/Poppins-Regular.woff);
+  src: url(./partials/fonts/poppins/Poppins-Regular.woff2);
+  src: url(./partials/fonts/poppins/Poppins-Regular.eot);
+  src: url(./partials/fonts/poppins/Poppins-SemiBold.eot);
+  src: url(./partials/fonts/poppins/Poppins-SemiBold.ttf);
+  src: url(./partials/fonts/poppins/Poppins-SemiBold.woff);
+  src: url(./partials/fonts/poppins/Poppins-SemiBold.woff2);
 }
 
 @layer base {
