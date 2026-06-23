@@ -18,6 +18,7 @@ export default defineConfig({
   root: "src",
   build: {
     outDir: resolve(__dirname, "dist"),
+    emptyOutDir: true,
     rollupOptions: {
       input: pages,
     },
