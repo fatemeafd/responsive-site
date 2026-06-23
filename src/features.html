@@ -4,7 +4,615 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Features</title>
-    <link rel="stylesheet" href="./public/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body class="font-first">
+    <!-- start project -->
+    <!-- start navbar -->
+    <div class="w-full bg-primary flex flex-row justify-center relative z-50">
+      <div
+        class="lg:w-[75%] w-[85%] flex flex-row justify-between items-center lg:p-4 py-6 my-5 px-6"
+      >
+        <!-- start logo -->
+        <div>
+          <img src="./image/svg/logo.svg" class="bg-cover w-26.25" alt="logo" />
+        </div>
+        <!-- end logo -->
+        <!-- start hamburger menu -->
+        <div class="lg:flex lg:items-center">
+          <input id="check" type="checkbox" class="hidden peer" />
+          <label
+            for="check"
+            class="relative z-60 bg-cover w-26.25 flex justify-center lg:hidden"
+          >
+            <img
+              src="./image/svg/hamburger-menu.svg"
+              class="peer-checked:hidden"
+              alt="menu"
+            />
+          </label>
+          <div
+            class="lg:flex lg:flex-row flex-col lg:items-center items-center lg:w-fit w-full lg:h-fit h-screen lg:text-lg text-xl hidden peer-checked:flex absolute lg:static left-0 top-0 z-50 lg:z-auto lg:top-auto transition-all duration-300 align-center lg:leading-0 leading-10 bg-primary lg:bg-transparent text-[#BBBBCB] cursor-pointer gap-5 p-15 lg:p-0"
+          >
+            <a href="./index.html" class="text-white capitalize">home</a>
+            <a href="./about-us.html" class="hover:text-white capitalize"
+              >about us</a
+            >
+            <a href="./features.html" class="hover:text-white capitalize"
+              >features</a
+            >
+            <a href="./pricing.html" class="hover:text-white capitalize"
+              >pricing</a
+            >
+            <a href="./faq.html" class="hover:text-white">FAQ</a>
+            <a href="./blog.html" class="hover:text-white capitalize">blog</a>
+            <a href="./privacy-policy.html" class="hover:text-white capitalize"
+              >policy</a
+            >
+            <a
+              href="./contact-us.html"
+              class="w-fit px-4 lg:border-2 lg:border-[#F4F6FC33] lg:rounded-full p-4 hover:bg-secondary hover:text-black hover:border-white translate duration-300"
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
+        <!-- end hamburger menu -->
+      </div>
+    </div>
+    <!-- end navbar -->
+    <!-- start home hero -->
+    <div class="w-full flex items-center p-10 bg-primary">
+      <div class="lg:w-[75%] w-[85%] flex flex-row lg:px-6">
+        <div
+          class="lg:w-1/2 w-full flex flex-col justify-center lg:text-left text-center text-base gap-2 lg:items-start items-center lg:pt-2 flex-wrap"
+        >
+          <h1 class="lg:font-semibold lg:text-5xl text-3xl">
+            All the features you need
+          </h1>
+          <p class="lg:py-5 lg:pr-2 m-4 lg:text-base font-thin">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+            dolor veritatis vel eaque ullam.
+          </p>
+          <div class="flex flex-col gap-5 content-center">
+            <a
+              href="./work.html"
+              class="lg:text-left text-center content-center my-5 bg-secondary max-w-fit rounded-full text-black text-lg font-normal px-5 py-3 hover:bg-base translate-1 duration-300"
+              >View our work</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="lg:flex hidden">
+        <img src="./image/svg/hero.svg" alt="" />
+      </div>
+    </div>
+    <!-- end home hero -->
+    <!-- start logo section -->
+    <div class="full flex justify-center my-8">
+      <div class="w-[85%]">
+        <img src="./image/svg/logo-about-us.svg" alt="" />
+      </div>
+    </div>
+    <!-- end logo section -->
+    <!-- start benefits -->
+    <div class="w-full flex justify-center my-10">
+      <div class="w-[85%] flex flex-col items-center gap-10">
+        <h5 class="lg:text-5xl text-2xl font-semibold max-w-160 text-center">
+          The benefits of working with us
+        </h5>
+        <div class="flex flex-col lg:flex-row justify-start gap-5 my-5">
+          <div class="flex flex-col gap-5 lg:w-1/3 w-full bg-[#EEF4FA] p-10">
+            <div><img src="./image/svg/icon1.svg" alt="" /></div>
+            <h6 class="text-2xl max-w-160 text-left">Customize with ease</h6>
+            <p class="mx-auto font-normal leading-7 text-[#282938]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+              enim.
+            </p>
+          </div>
+          <div class="flex flex-col gap-5 lg:w-1/3 w-full bg-[#EEF4FA] p-10">
+            <div><img src="./image/svg/icon2.svg" alt="" /></div>
+            <h6 class="text-2xl max-w-160 text-left">Perfectly Responsive</h6>
+            <p class="mx-auto font-normal leading-7 text-[#282938]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+              enim.
+            </p>
+          </div>
+          <div class="flex flex-col gap-5 lg:w-1/3 w-full bg-[#EEF4FA] p-10">
+            <div><img src="./image/svg/icon3.svg" alt="" /></div>
+            <h6 class="text-2xl max-w-160 text-left">Friendly Support</h6>
+            <p class="mx-auto font-normal leading-7 text-[#282938]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+              enim.
+            </p>
+          </div>
+        </div>
+        <div class="flex lg:flex-row row-wrap"></div>
+      </div>
+    </div>
+    <!-- end benefits -->
+    <!-- start first section -->
+    <div class="w-full flex justify-center my-10">
+      <div class="w-[85%] flex lg:flex-row flex-col items-center gap-10">
+        <div class="flex flex-col gap-5 lg:w-1/2 w-full">
+          <span class="capitalize">use client first</span>
+          <h6 class="capitalize lg:text-3xl text-2xl font-semibold max-w-160">
+            Top agencies and freelancers around the world use Client-first
+          </h6>
+          <p
+            class="mx-auto font-normal leading-7 tracking-normal text-[#282938]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation.
+          </p>
+        </div>
+        <div class="lg:w-1/2 w-full">
+          <img src="./image/features1.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- end first section -->
+    <!-- start second section -->
+    <div class="w-full flex justify-center my-10 bg-[#F4F6FC] py-10">
+      <div class="w-[85%] flex lg:flex-row flex-col items-center gap-10">
+        <div class="lg:w-1/2 w-full">
+          <img src="./image/features2.png" alt="" />
+        </div>
+        <div class="flex flex-col gap-5 lg:w-1/2 w-full">
+          <span class="capitalize">Free Revision Rounds</span>
+          <h6 class="capitalize lg:text-3xl text-2xl font-semibold max-w-160">
+            Get free Revisions and one week of free maintenance
+          </h6>
+          <p
+            class="mx-auto font-normal leading-7 tracking-normal text-[#282938]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end second section -->
+    <!-- start third section -->
+    <div class="w-full flex justify-center my-10">
+      <div class="w-[85%] flex lg:flex-row flex-col items-center gap-10">
+        <div class="flex flex-col gap-5 lg:w-1/2 w-full">
+          <span class="capitalize">24/7 Support</span>
+          <h6 class="capitalize lg:text-3xl text-2xl font-semibold max-w-160">
+            Working with us, you will be getting 24/7 priority support
+          </h6>
+          <p
+            class="mx-auto font-normal leading-7 tracking-normal text-[#282938]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="lg:w-1/2 w-full">
+          <img src="./image/features3.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- end third section -->
+    <!-- start fourth section -->
+    <div class="w-full flex justify-center my-10 bg-[#FFFBF2] py-10">
+      <div class="w-[85%] flex lg:flex-row flex-col items-center gap-10">
+        <div class="lg:w-1/2 w-full h-100">
+          <img
+            src="./image/features4.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="flex flex-col gap-5 lg:w-1/2 w-full">
+          <span class="capitalize">Quick Delivery</span>
+          <h6 class="capitalize lg:text-3xl text-2xl font-semibold max-w-160">
+            Guranteed 1 week delivery for standard five pager website
+          </h6>
+          <p
+            class="mx-auto font-normal leading-7 tracking-normal text-[#282938]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end fourth section -->
+    <!-- start FAQ -->
+    <div class="w-full flex justify-center my-15">
+      <div class="w-[85%] flex lg:flex-row flex-col gap-4">
+        <div class="w-full lg:w-1/3 flex flex-col gap-5">
+          <h5
+            class="text-4xl lg:text-left text-center font-semibold text-[#282938]"
+          >
+            Frequently asked questions
+          </h5>
+          <a href="./contact-us.html" class="text-[#2405F2]"
+            >Contact us For More Info</a
+          >
+        </div>
+        <div class="lg:w-2/3 w-full">
+          <div
+            id="accordion-collapse"
+            data-accordion="collapse"
+            class="rounded-base border border-default overflow-hidden shadow-xs"
+          >
+            <h2 id="accordion-collapse-heading-1">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base border border-t-0 border-x-0 border-b-default hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                data-accordion-target="#accordion-collapse-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-collapse-body-1"
+              >
+                <div class="flex flex-row gap-5">
+                  <span class="text-blue-600">01</span>
+                  <span>How much time does it take?</span>
+                </div>
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-1"
+              class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
+              aria-labelledby="accordion-collapse-heading-1"
+            >
+              <div class="p-4 md:p-5">
+                <p class="mb-2 text-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="text-body">
+                  Check out this guide to learn how to
+                  <a
+                    href="/docs/getting-started/introduction/"
+                    class="text-fg-brand hover:underline"
+                    >get started</a
+                  >
+                  and start developing websites even faster with components on
+                  top of Tailwind CSS.
+                </p>
+              </div>
+            </div>
+            <h2 id="accordion-collapse-heading-2">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body border border-x-0 border-b-default border-t-0 hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                data-accordion-target="#accordion-collapse-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-2"
+              >
+                <div class="flex flex-row gap-5">
+                  <span class="text-blue-600">02</span>
+                  <span>Is there a Figma file available?</span>
+                </div>
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-2"
+              class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
+              aria-labelledby="accordion-collapse-heading-2"
+            >
+              <div class="p-4 md:p-5">
+                <p class="mb-2 text-body">
+                  Flowbite is first conceptualized and designed using the Figma
+                  software so everything you see in the library has a design
+                  equivalent in our Figma file.
+                </p>
+                <p class="text-body">
+                  Check out the
+                  <a
+                    href="https://flowbite.com/figma/"
+                    class="text-fg-brand hover:underline"
+                    >Figma design system</a
+                  >
+                  based on the utility classes from Tailwind CSS and components
+                  from Flowbite.
+                </p>
+              </div>
+            </div>
+            <h2 id="accordion-collapse-heading-3">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body border border-x-0 border-b-default border-t-0 hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                data-accordion-target="#accordion-collapse-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-3"
+              >
+                <div class="flex flex-row gap-5">
+                  <span class="text-blue-600">03</span>
+                  <span
+                    >What are the differences between Flowbite and Tailwind
+                    UI?</span
+                  >
+                </div>
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-3"
+              class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
+              aria-labelledby="accordion-collapse-heading-3"
+            >
+              <div class="p-4 md:p-5">
+                <p class="mb-2 text-body">
+                  The main difference is that the core components from Flowbite
+                  are open source under the MIT license, whereas Tailwind UI is
+                  a paid product. Another difference is that Flowbite relies on
+                  smaller and standalone components, whereas Tailwind UI offers
+                  sections of pages.
+                </p>
+                <p class="mb-2 text-body">
+                  However, we actually recommend using both Flowbite, Flowbite
+                  Pro, and even Tailwind UI as there is no technical reason
+                  stopping you from using the best of two worlds.
+                </p>
+                <p class="mb-2 text-body">
+                  Learn more about these technologies:
+                </p>
+                <ul class="ps-5 text-body list-disc">
+                  <li>
+                    <a
+                      href="https://flowbite.com/pro/"
+                      class="text-fg-brand hover:underline"
+                      >Flowbite Pro</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://tailwindui.com/"
+                      rel="nofollow"
+                      class="text-fg-brand hover:underline"
+                      >Tailwind UI</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h2 id="accordion-collapse-heading-4">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body border border-x-0 border-b-default border-t-0 hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                data-accordion-target="#accordion-collapse-body-4"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-4"
+              >
+                <div class="flex flex-row gap-5">
+                  <span class="text-blue-600">04</span>
+                  <span>I have a bigger project. Can you handle it?</span>
+                </div>
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-4"
+              class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
+              aria-labelledby="accordion-collapse-heading-4"
+            >
+              <div class="p-4 md:p-5">
+                <p class="mb-2 text-body">
+                  Yes, we can handle larger projects. Our team works with
+                  startups and growing businesses to deliver full website
+                  builds, multi-page designs, and ongoing support tailored to
+                  your scope and timeline.
+                </p>
+                <p class="text-body">
+                  Get in touch through our
+                  <a
+                    href="./contact-us.html"
+                    class="text-fg-brand hover:underline"
+                    >contact page</a
+                  >
+                  and we will discuss your project requirements in detail.
+                </p>
+              </div>
+            </div>
+            <h2 id="accordion-collapse-heading-5">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                data-accordion-target="#accordion-collapse-body-5"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-5"
+              >
+                <div class="flex flex-row gap-5">
+                  <span class="text-blue-600">05</span>
+                  <span>What is your class naming convention?</span>
+                </div>
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-collapse-body-5"
+              class="hidden"
+              aria-labelledby="accordion-collapse-heading-5"
+            >
+              <div
+                class="p-4 md:p-5 border border-t-default border-b-0 border-x-0"
+              >
+                <p class="mb-2 text-body">
+                  We use Tailwind CSS utility classes for styling, following a
+                  consistent and readable naming approach based on component
+                  structure and layout.
+                </p>
+                <p class="text-body">
+                  This keeps the codebase maintainable and makes it easy to
+                  update designs without writing custom CSS for every element.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end FAQ -->
+    <!-- start footer -->
+    <div class="w-full flex justify-center my-10 py-5 bg-primary">
+      <div class="w-[85%]">
+        <div class="flex lg:flex-row flex-col gap-2">
+          <!-- start left section -->
+          <div class="flex flex-col gap-5 py-3 lg:w-1/2 w-full">
+            <div>
+              <img
+                src="/image/svg/logo.svg"
+                class="bg-cover w-26.25"
+                alt="logo"
+              />
+            </div>
+            <p class="text-base">
+              We are always open to discuss your project and improve your online
+              presence.
+            </p>
+            <div
+              class="px-4 lg:w-[85%] w-full font-4.5 py-12 bg-secondary flex flex-row gap-8"
+            >
+              <div class="flex flex-col">
+                <span class="font-semibold">Email me at</span>
+                <span>contact@website.com</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-semibold">Call us</span>
+                <span>0927 6277 28525</span>
+              </div>
+            </div>
+          </div>
+          <!-- end left section -->
+          <!-- start right section -->
+          <div class="flex flex-col gap-5 lg:w-1/2 w-full">
+            <h1 class="text-base lg:text-5xl font-semibold text-4xl">
+              Let's Talk!
+            </h1>
+            <p class="text-base">
+              We are always open to discuss your project, improve your online
+              presence, and help with your UX/UI design challenges.
+            </p>
+            <div><img src="./image/svg/social.svg" alt="#" /></div>
+          </div>
+          <!-- end right section -->
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex justify-center">
+      <div
+        class="w-[85%] flex lg:flex-row flex-col gap-3 lg:justify-between lg:flex-nowrap flex-wrap items-center"
+      >
+        <span class="lg:w-1/2 w-full">Copyright 2022, Finsweet.com</span>
+        <div
+          class="flex flex-row lg:justify-end justify-between lg:gap-5 gap-2 lg:w-1/2 w-full py-2 my-5"
+        >
+          <a href="" class="hover:underline">Home</a>
+          <a href="./about-us.html" class="hover:underline">About us</a>
+          <a href="./features.html" class="hover:underline">Features</a>
+          <a href="./pricing.html" class="hover:underline">Pricing</a>
+          <a href="./faq.html" class="hover:underline">FAQ</a>
+          <a href="./blog.html" class="hover:underline">Blog</a>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 </html>
